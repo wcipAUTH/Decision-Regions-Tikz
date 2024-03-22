@@ -1,0 +1,223 @@
+\documentclass[journal]{IEEEtran}
+%\documentclass[journal,draftcls,twocolumn,12pt,twoside]{IEEEtranTCOM} 
+
+%\documentclass[conference]{IEEEtran}
+%\documentclass[12pt,journal,draftclsnofoot,onecolumn]{IEEEtran}
+
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb}
+\usepackage{amsfonts}
+\usepackage[dvips]{graphicx}
+\usepackage{dsfont}
+\usepackage{comment}
+\usepackage{algorithmic}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage[noabbrev]{cleveref}
+%\usepackage{subcaption}
+%\DeclareMathOperator{\sgn}{sgn}
+%\long\def\symbolfootnote[#1]#2{\begingroup\def\thefootnote{\fnsymbol{footnote}}
+%\footnote[#1]{#2}\endgroup}
+%\newtheorem{theorem}{Theorem}
+\usepackage{balance}
+% \usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{float}
+\usepackage{color}
+\usepackage{pgfplots}           %for plotting graphs
+\pgfplotsset{compat=1.16}
+
+\usepackage{enumerate}
+\usepackage{graphics}
+%\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{cite}
+\usepackage{mathrsfs}
+%\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{stfloats}
+
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.misc}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usepackage{graphicx}
+\usetikzlibrary{decorations.pathreplacing,calligraphy}
+\usetikzlibrary{arrows.meta, decorations.markings}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+%\pgfplotsset{axis y line*/center/.code={%
+%    \def\pgfplots@yaxislinesnum{1}%
+%    \def\pgfplots@ytickposnum{2}%
+%    \let\pgfplots@yticklabel@pos\pgfutil@empty
+%}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+%\newtheorem{algorithm}{Algorithm}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newtheorem{solution}{Solution}
+\newtheorem{summary}{Summary}
+\newcommand{\snr}{\bar{\gamma}}
+\newcommand{\pn}{\sigma_{\phi}}
+\newcommand{\A}{A(M,\Gamma)}
+\newcommand{\Asquare}{A^2(M,\Gamma)}
+\usepackage{amsmath,amssymb}
+\usepackage{amsfonts}
+\usepackage[dvips]{graphicx}
+\usepackage{dsfont}
+\usepackage{algorithmic}
+%\DeclareMathOperator{\sgn}{sgn}
+%\long\def\symbolfootnote[#1]#2{\begingroup\def\thefootnote{\fnsymbol{footnote}}
+%\footnote[#1]{#2}\endgroup}
+%\newtheorem{theorem}{Theorem}
+\usepackage{balance}
+% \usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{mathtools}
+\usepackage{comment}
+
+
+% \usepackage[hidelinks]{hyperref}    %for using hyperlinks
+
+\usepackage{color}
+\usepackage{pgfplots}           %for plotting graphs
+\pgfplotsset{compat=1.16}
+%\usepackage{subfigure}
+\usepackage{caption}
+%\usepackage{subcaption}
+
+
+
+\usepackage{enumerate}
+\usepackage{graphics}
+%\usepackage{subfigure}
+\usepackage{cite}
+\usepackage{mathrsfs}
+%\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{stfloats}
+\usepackage{xfrac}
+
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usepackage{graphicx}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\usepackage{mathtools, nccmath}
+
+\DeclarePairedDelimiter{\nint}\lfloor\rceil
+
+\begin{document}
+
+
+
+
+
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+    xtick=\empty,
+    ytick=\empty,
+    xlabel style={below},
+    ylabel style={above},
+    xmin=-2,
+    xmax=2,
+    ymin=-2,
+    ymax=2,
+]
+\addplot [only marks, mark size = 2,black] table {data/apsk-iq.txt};
+\addplot [no markers, update limits=false] table{data/apsk-voronoi.txt};
+\end{axis}
+\end{tikzpicture}	
+\caption{Decision Regions APSK}
+\label{fig:irregular-apsk}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+    xtick=\empty,
+    ytick=\empty,
+    xlabel style={below},
+    ylabel style={above},
+    xmin=-1.5,
+    xmax=1.5,
+    ymin=-1.5,
+    ymax=1.5,
+]
+\addplot [only marks, mark size = 2,black] table {data/regular_apsk-iq.txt};
+\addplot [no markers, update limits=false] table{data/regular_apsk-voronoi.txt};
+\end{axis}
+\end{tikzpicture}	
+\caption{Decision Regions Regular APSK}
+\label{fig:regular_apsk}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+    xtick=\empty,
+    ytick=\empty,
+    xlabel style={below},
+    ylabel style={above},
+    xmin=-1.5,
+    xmax=1.5,
+    ymin=-1.5,
+    ymax=1.5,
+]
+\addplot [only marks, mark size = 2,black] table {data/hqam-iq.txt};
+\addplot [no markers, update limits=false] table{data/hqam-voronoi.txt};
+\end{axis}
+\end{tikzpicture}	
+\caption{Decision Regions HQAM}
+\label{fig:hqam}
+\end{figure}
+\end{document}
